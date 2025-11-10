@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maus's Additions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1c1c1c;
+            color: #f5f5f5;
+            margin: 0;
+        }
+        nav {
+            background: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ff9800;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+        }
+        button.download-btn {
+            background-color: #ff9800;
+            color: #1c1c1c;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button.download-btn:hover {
+            background-color: #ffa733;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="news.html">Новости и Скриншоты</a>
+    </nav>
+    <div class="container">
+        <h1>Maus's Additions</h1>
+        <button class="download-btn" onclick="downloadFile()">Скачать Архив с EULA и Авторскими Правами</button>
+        <p>Все права защищены © Only_Mauss 2025</p>
+    </div>
+    <script>
+        function downloadFile() {
+            const link = document.createElement('a');
+            link.href = 'copyrights_eula.zip';
+            link.download = 'Maus_Additions_EULA.zip';
+            link.click();
+        }
+    </script>
+	<footer style="text-align:center; padding:15px 0; font-size:0.85em; color:#bbb;">
+    <p id="lastModified">Последнее обновление: 
+        <script>
+            document.getElementById('lastModified').innerHTML = "Последнее обновление: " + new Date(document.lastModified).toLocaleString();
+        </script>
+    </p>
+	</footer>
+
+</body>
+</html>

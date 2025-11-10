@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maus's Additions - Новости</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1c1c1c;
+            color: #f5f5f5;
+            margin: 0;
+        }
+        nav {
+            background: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ff9800;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #ff9800;
+        }
+        .screenshot {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+        }
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .log-entry {
+            background: #2c2c2c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        .date {
+            font-size: 0.8em;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="news.html">Новости и Скриншоты</a>
+    </nav>
+    <div class="container">
+        <h2>Changelog</h2>
+        <div class="log-entry">
+            <div class="date">10.11.2025</div>
+            <p>Версия 1.0.1 - Первый релиз мода Maus's Additions. Добавлены Кевлар, Углеродное волокно \Карбон\, крафты для карбона кевлара и зимней формы. Добавлены авторские права и EULA.</p>
+        </div>
+        <div class="log-entry">
+            <div class="date">15.11.2025</div>
+            <p>Версия 1.0.0 - Добавлена зимняя форма и ствол.</p>
+        </div>
+
+        <h2>Devlog</h2>
+        <div class="log-entry">
+			<div class="date">10.11.2025</div>
+            <p>Добавлены новые предметы и крафты.</p>
+            <div class="date">09.11.2025</div>
+            <p>Начало разработки мода. Создан каркас проекта в MCreator и подготовлена структура папок.</p>
+        </div>
+
+        <h2>Скриншоты</h2>
+        <div class="screenshots">
+            <img src="images/1.png" alt="Все предметы в моде" class="screenshot">
+            <img src="images/2.png" alt="Крафт зимнего шлема" class="screenshot">
+			<img src="images/3.png" alt="Крафт зимнего нагрудника" class="screenshot">
+            <img src="images/4.png" alt="Крафт зимних штанов" class="screenshot">
+			<img src="images/5.png" alt="Крафт зимних ботинков" class="screenshot">
+            <img src="images/6.png" alt="Крафт кевлара" class="screenshot">
+			<img src="images/7.png" alt="Крафт карбона" class="screenshot">
+            <img src="images/8.png" alt="Текстура кевлара" class="screenshot">
+			<img src="images/9.png" alt="Текстура карбона" class="screenshot">
+            <img src="images/10.png" alt="Текстура ствола" class="screenshot">
+        </div>
+    </div>
+	<footer style="text-align:center; padding:15px 0; font-size:0.85em; color:#bbb;">
+    <p id="lastModified">Последнее обновление: 
+        <script>
+            document.getElementById('lastModified').innerHTML = "Последнее обновление: " + new Date(document.lastModified).toLocaleString();
+        </script>
+    </p>
+	</footer>
+
+</body>
+</html>
